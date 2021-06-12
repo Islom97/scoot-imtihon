@@ -1,0 +1,141 @@
+.scooter{
+    position: relative;
+    height: 650px;
+    width: 100%;
+    background-image: url(../../../img/intro-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 96px;
+    margin-bottom: 160px;
+
+    @media only screen and (max-width: 770px){
+        background-position: right;
+        margin-bottom: 122px;
+    }
+
+    @media only screen and (max-width: 450px){
+        margin-top: 64px;
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../../../img/aylana.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 234px;
+        height: 80px;
+        right: 0;
+        top: 400.5px;
+
+        @media only screen and (max-width: 770px){
+            display: none;
+        }
+    }
+    
+    .scooter__title{
+        width: 500px;
+        font-family: $font;
+        letter-spacing: -2.5px;
+        font-size: 56px;
+        line-height: 56px;
+        color: #fff;
+        margin-bottom: 40px;
+        padding-top: 153px;
+
+        @media only screen and (max-width: 770px){
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: 311px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    
+    .scooter__text{
+        position: relative;
+        color: #fff;
+        width: 405px;
+        margin-bottom: 40px;
+        margin-left: 92px;
+
+        @media only screen and (max-width: 770px){
+            text-align: center;
+            width: 573px;
+            margin: 0 auto;
+            margin-bottom: 32px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            width: 311px;
+            margin-bottom: 34px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 15px;
+            width: 202.5px;
+            background-image: url(../../../img/line-1.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: -259.5px;
+            top: 35px;
+
+            @media only screen and (max-width: 770px){
+                display: none;
+            }
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 149px;
+            width: 447px;
+            background-image: url(../../../img/line-2.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: -487px;
+            top: 35px;
+
+            @media only screen and (max-width: 770px){
+                left: -40%;
+                top: 180px;
+            }
+
+            @media only screen and (max-width: 450px) {
+                top: 200px;
+                left: -350px;
+            }
+        }
+    }
+    
+    .scooter__link{
+        
+        color: #fff;
+        font-family: $font;
+        padding: 14px 39px;
+        background-color: $color-orande;
+        margin-left: 92px;
+
+        @media only screen and (max-width: 770px){
+            margin-left: 255px;
+        }
+
+        @media only screen and (max-width: 450px) {
+            margin-left: 70px;
+        }
+
+        
+        
+        &:hover{
+            border: 3px solid $color-orande;
+            color: $color-orande;
+            background-color: transparent;
+            padding: 11px 36px;
+        }
+    }
+    
+}

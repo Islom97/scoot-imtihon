@@ -1,0 +1,46 @@
+$font: 'Space Mono', sans-serif;
+$color-dark: #495567;
+$color-gray: #939CAA;
+$color-orande: #FCB72B;
+
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media only screen and (max-width: 770px){
+        width: 720px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        width: 350px;
+    }
+}
+
+@import 'general';

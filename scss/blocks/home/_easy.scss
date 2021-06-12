@@ -1,0 +1,179 @@
+.easy{
+    position: relative;
+    // width: 1347px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../../../img/line-3.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 735px;
+        height: 150px;
+        top: 307px;
+        right: -50px;
+
+        @media only screen and (max-width: 450px) {
+            right: -340px;
+            top: 160px;
+        }
+    }
+    .easy__list{
+        
+        .easy__item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 160px;
+
+            @media only screen and(max-width: 770px) {
+                flex-direction: column-reverse;
+            }
+
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+
+                @media only screen and(max-width: 770px) {
+                    flex-direction: column-reverse;
+                }
+
+                .easy__picture::after{
+                    left: -500px;
+                }
+                .easy__picture::before{
+                    content: '';
+                    position: absolute;
+                    width: 500px;
+                    height: 210px;
+                    background-image: url(../../../img/line-4.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    left: -50%;
+
+                    @media only screen and (max-width: 450px) {
+                        top: -40px;
+                        margin-left: -100px;
+                    }
+                }
+            }
+
+            &:nth-child(3){
+                .easy__picture::before{
+                    content: '';
+                    position: absolute;
+                    width: 500px;
+                    height: 160px;
+                    background-image: url(../../../img/line-3.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    top: 110px;
+                    right: -300px;
+                    z-index: 3;
+
+                    @media only screen and (max-width: 450px) {
+                        top: 0;
+                        
+                    }
+                }
+            }
+            
+            .easy__title{
+                width: 445px;
+                font-family: $font;
+                color: $color-dark;
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                margin-bottom: 24px;
+
+                @media only screen and(max-width: 770px) {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 56px;
+                    margin-bottom: 40px;
+                }
+
+                @media only screen and (max-width: 450px) {
+                    font-size: 32px;
+                    line-height: 32px;
+                    width: 311px;
+                    letter-spacing: -1.42857px;
+                    margin-bottom: 32px;
+                }
+            }
+            .easy__text{
+                color: $color-gray;
+                width: 445px;
+                margin-bottom: 40px;
+
+                @media only screen and(max-width: 770px) {
+                    text-align: center;
+                    width: 573px;
+                }
+
+                @media only screen and (max-width: 450px) {
+                    width: 311px;
+                    margin-bottom: 32px;
+                }
+            }
+            
+            .easy__link{
+                color: #fff;
+                font-family: $font;
+                padding: 14px 39px;
+                background-color: $color-orande;
+
+                &:hover{
+                    border: 3px solid $color-orande;
+                    color: $color-orande;
+                    background-color: #fff;
+                    padding: 11px 36px;
+                }
+
+                @media only screen and(max-width: 770px) {
+                    margin-left: 200px;
+                }
+
+                @media only screen and (max-width: 450px) {
+                    margin-left: 70px;
+                }
+                
+            }
+
+            .easy__picture{
+                position: relative;
+                display: block;
+                
+                
+
+                &::after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 445px;
+                    height: 445px;
+                    border-radius: 50%;
+                    background-color: #E5ECF4;
+                    top: 0;
+                    right: -500px;
+
+                    @media only screen and (max-width: 450px) {
+                        display: none;
+                    }
+
+                }
+
+                .easy__picture-img{
+
+                    @media only screen and (max-width: 450px) {
+                        width: 311px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

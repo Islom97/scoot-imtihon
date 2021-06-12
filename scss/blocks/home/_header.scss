@@ -1,0 +1,87 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 22px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(204, 204, 204, 0.4);
+    
+    .header__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .header__button{
+            display: none;
+            
+            @media only screen and(max-width: 450px) {
+                background-color: transparent;
+                border: none;
+            }
+            
+        }
+        
+        .header__left{
+            display: flex;
+            align-items: center;
+            
+            .header__logo{
+                
+                @media only screen and (max-width: 450px) {
+                    margin-right: 110px;
+                }
+            }
+            
+            .header__list{
+                display: flex;
+                align-items: center;
+                margin-left: 58px;
+                
+                @media only screen and (max-width: 450px) {
+                    display: none;
+                }
+                
+                .header__item{
+                    margin-right: 32px;
+                    
+                    &:nth-child(3){
+                        margin-right: 0;
+                    }
+                    
+                    .header__link{
+                        font-family: $font;
+                        color: $color-gray;
+                        transition: .4s ease;
+                        
+                        &:hover{
+                            color: $color-orande;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .header__right{
+        
+        @media only screen and (max-width: 450px) {
+            display: none;
+        }
+        
+        .header__button-link{
+            color: #fff;
+            font-family: $font;
+            padding: 14px 39px;
+            background-color: $color-orande;
+            
+            &:hover{
+                border: 3px solid $color-orande;
+                color: $color-orande;
+                background-color: #fff;
+                padding: 11px 36px;
+            }
+        }
+    }
+}
