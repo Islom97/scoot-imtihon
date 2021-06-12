@@ -1,0 +1,6 @@
+github link:
+https://github.com/Islom97/scoot-imtihon
+
+
+netlify link:
+islom-imthon.netlify.app

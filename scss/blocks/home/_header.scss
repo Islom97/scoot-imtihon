@@ -16,7 +16,8 @@
         .header__button{
             display: none;
             
-            @media only screen and(max-width: 450px) {
+            @media only screen and (max-width: 450px) {
+                display: block;
                 background-color: transparent;
                 border: none;
             }
