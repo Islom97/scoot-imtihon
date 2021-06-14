@@ -1,0 +1,87 @@
+.mobility{
+    position: relative;
+    overflow: hidden;
+    margin-top: 120px;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        width: 735px;
+        height: 138px;
+        background-image: url(../../../img/line-3.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotateX(180deg);
+        top: 268px;
+        right: -30px;
+    }
+    
+    .mobility__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        
+        &:nth-child(2){
+            flex-direction: row-reverse;
+            
+            .mobility__picture{
+                
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 445px;
+                    height: 445px;
+                    border-radius: 50%;
+                    background-color: #E5ECF4;
+                    left: -509px;
+                }
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 500px;
+                    height: 138px;
+                    background-image: url(../../../img/line-2.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    left: -230px;
+                }
+            }
+        }
+        
+        .mobility__title{
+            width: 445px;
+            font-family: $font;
+            font-size: 48px;
+            line-height: 48px;
+            color: $color-dark;
+            margin-bottom: 24px;
+        }
+        
+        .mobility__text{
+            width: 445px;
+            color: $color-gray;
+        }
+        
+        .mobility__picture{
+            position: relative;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                width: 445px;
+                height: 445px;
+                border-radius: 50%;
+                background-color: #E5ECF4;
+                right: -509px;
+            }
+            
+            .img{
+                width: 445px;
+                height: 445px;
+            }
+        }
+    }
+    
+}

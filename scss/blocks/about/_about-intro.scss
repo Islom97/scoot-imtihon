@@ -1,0 +1,21 @@
+.about{
+    position: relative;
+    margin-top: 96px;
+    .about__bg{
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
+        
+    }
+    .about__title{
+        font-family: $font;
+        position: absolute;
+        top: 72px;
+        left: 120px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #fff;
+    }
+}
