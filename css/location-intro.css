@@ -1,0 +1,17 @@
+.location {
+  position: relative;
+  margin-top: 96px;
+}
+
+.location .location__picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.location__title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+}
