@@ -1183,3 +1183,47 @@ a {
   color: #fff;
   font-family: "Space Mono", sans-serif;
 }
+
+.map {
+  margin-bottom: 120px;
+}
+
+.map .map__write {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+}
+
+.map .map__write .map__title {
+  width: 351px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+  font-family: "Space Mono", sans-serif;
+  letter-spacing: -2.14286px;
+}
+
+.map .map__write .map__text {
+  color: #939CAA;
+  width: 445px;
+}
+
+.map .map__write .map__link {
+  color: #fff;
+  background-color: #FCB72B;
+  padding: 14px 43.5px 14px 44.5px;
+}
+
+.map .map__write .map__link:hover {
+  border: 3px solid #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
+  padding: 11px 40.3px 11px 41.5px;
+}

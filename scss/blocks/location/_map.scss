@@ -1,0 +1,37 @@
+.map{
+   margin-bottom: 120px;
+   
+   .map__write{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 120px;
+      
+      .map__title{
+         width: 351px;
+         font-size: 48px;
+         line-height: 48px;
+         color: $color-dark;
+         font-family: $font;
+         letter-spacing: -2.14286px;
+      }
+      .map__text{
+         color: $color-gray;
+         width: 445px;
+      }
+
+      .map__link{
+         color: #fff;
+         background-color: $color-orande;
+         padding: 14px 43.5px 14px 44.5px;
+         // transition: .3s ease;
+
+         &:hover{
+            border: 3px solid $color-orande;
+            background-color: transparent;
+            color: $color-orande;
+            padding: 11px 40.3px 11px 41.5px;
+         }
+      }
+   }
+}
