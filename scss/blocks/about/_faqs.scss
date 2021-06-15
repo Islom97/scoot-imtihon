@@ -1,0 +1,77 @@
+.faqs{
+    margin-bottom: 160px;
+    
+    .faqs__title{
+        color: $color-dark;
+        text-align: center;
+        font-size: 48px;
+        line-height: 48px;
+        font-family: $font;
+        margin-bottom: 64px;
+    }
+    
+    .faqs__list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+        
+        .faqs__item{
+            
+            .faqs__subtitle{
+                width: 350px;
+                font-family: $font;
+                font-size: 40px;
+                line-height: 48px;
+                color: $color-dark;
+            }
+            
+        }
+        
+        .wrapper{
+            
+            .wrapper__list{
+                
+                .wrapper__item{
+                    position: relative;
+                    cursor: pointer;
+                    margin-bottom: 16px;
+                    padding: 32px 40px;
+                    background-color: #F2F5F9;
+                    transition: .5s ease;
+                    &:hover{
+                        background-color: #FFF4DF;
+                    }
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 16px;
+                        height: 8px;
+                        background-image: url(../../../img/about/wrapper.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        top: 44px;
+                        right: 40px;
+                    }
+                    
+                    .wrapper__title{
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: $color-dark;
+                        font-family: $font;
+                        letter-spacing: -1.07143px;
+                    }
+                    .mb{
+                        margin-bottom: 24px;
+                    }
+
+                    .wrapper__text{
+                        width: 650px;
+                        color: $color-dark;
+
+                    }
+                }
+            }
+        }
+    }
+}
