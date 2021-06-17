@@ -8,17 +8,26 @@
       img{
          object-fit: cover;
          width: 100%;
+
+         @media only screen and (max-width: 770px) {
+      }
       }
    }
    
    &__title{
       position: absolute;
-      top: 72px;
+      top: 60px;
       left: 115px;
       font-size: 56px;
       line-height: 56px;
       letter-spacing: -2.5px;
       color: #fff;
       font-family: $font;
+
+      @media only screen and (max-width: 770px) {
+         top: 25px;
+         width: 150px;
+         left: 25px;
+      }
    }
 }

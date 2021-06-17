@@ -1,0 +1,60 @@
+.mission{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 120px;
+   overflow: hidden;
+   
+   .mission__write{
+      
+      .mission__title{
+         width: 445px;
+         color: $color-dark;
+         font-family: $font;
+         font-size: 48px;
+         line-height: 48px;
+         letter-spacing: -2.14286px;
+         margin-bottom: 24px;
+      }
+
+      .mission__text{
+         width: 445px;
+         color: $color-gray;
+         margin-bottom: 40px;
+      }
+
+      .mission__link{
+         color: #fff;
+         padding: 14px 48px;
+         background-color: $color-orande;
+         transition: .5s ease;
+         height: 53px;
+         width: 180px;
+         text-align: center;
+
+         &:hover{
+            background-color: transparent;
+            border: 3px solid $color-orande;
+            padding: 11px 45px;
+            color: $color-orande;
+         }
+      }
+   }
+
+   &__picture{
+      position: relative;
+
+      &::after{
+         content: '';
+         position: absolute;
+         width: 735px;
+         height: 150px;
+         background-image: url(../../../img/line-3.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         left: -140px;
+         bottom: 0;
+      }
+   }
+   
+}

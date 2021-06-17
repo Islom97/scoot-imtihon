@@ -1175,7 +1175,7 @@ a {
 
 .location__title {
   position: absolute;
-  top: 72px;
+  top: 60px;
   left: 115px;
   font-size: 56px;
   line-height: 56px;
@@ -1184,8 +1184,20 @@ a {
   font-family: "Space Mono", sans-serif;
 }
 
+@media only screen and (max-width: 770px) {
+  .location__title {
+    top: 25px;
+    width: 150px;
+    left: 25px;
+  }
+}
+
 .map {
   margin-bottom: 120px;
+}
+
+.map .map__picture img {
+  width: 100%;
 }
 
 .map .map__write {
@@ -1201,6 +1213,16 @@ a {
   margin-top: 120px;
 }
 
+@media only screen and (max-width: 770px) {
+  .map .map__write {
+    margin-top: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .map .map__write .map__title {
   width: 351px;
   font-size: 48px;
@@ -1210,9 +1232,25 @@ a {
   letter-spacing: -2.14286px;
 }
 
+@media only screen and (max-width: 770px) {
+  .map .map__write .map__title {
+    text-align: center;
+    width: 457px;
+    margin-bottom: 40px;
+  }
+}
+
 .map .map__write .map__text {
   color: #939CAA;
   width: 445px;
+}
+
+@media only screen and (max-width: 770px) {
+  .map .map__write .map__text {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 573px;
+  }
 }
 
 .map .map__write .map__link {
@@ -1226,4 +1264,114 @@ a {
   background-color: transparent;
   color: #FCB72B;
   padding: 11px 40.3px 11px 41.5px;
+}
+
+.mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+
+.mission .mission__write .mission__title {
+  width: 445px;
+  color: #495567;
+  font-family: "Space Mono", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  margin-bottom: 24px;
+}
+
+.mission .mission__write .mission__text {
+  width: 445px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+
+.mission .mission__write .mission__link {
+  color: #fff;
+  padding: 14px 48px;
+  background-color: #FCB72B;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  height: 53px;
+  width: 180px;
+  text-align: center;
+}
+
+.mission .mission__write .mission__link:hover {
+  background-color: transparent;
+  border: 3px solid #FCB72B;
+  padding: 11px 45px;
+  color: #FCB72B;
+}
+
+.mission__picture {
+  position: relative;
+}
+
+.mission__picture::after {
+  content: '';
+  position: absolute;
+  width: 735px;
+  height: 150px;
+  background-image: url(../../../img/line-3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -140px;
+  bottom: 0;
+}
+
+.works {
+  margin-bottom: 120px;
+}
+
+.works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 64px 35px 40px;
+  background-color: #F2F5F9;
+  margin-bottom: 24px;
+}
+
+.works__content .works__title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  font-family: "Space Mono", sans-serif;
+  margin-bottom: 8px;
+}
+
+.works__content .works__text {
+  color: #495567;
+}
+
+.works__content .works__link {
+  color: #fff;
+  font-family: "Space Mono", sans-serif;
+  padding: 14px 67.5px;
+  background-color: #FCB72B;
+}
+
+.works__content .works__link:hover {
+  color: #FCB72B;
+  background-color: transparent;
+  border: 3px solid #FCB72B;
+  padding: 11px 64.5px;
 }
