@@ -77,10 +77,26 @@
 
         <section class="map container">
             <picture class="map__picture">
+                <source media="(max-width:450px)" srcset="./img/location/mab-mobile.png">
                 <source srcset="./img/location/map.webp 1x, ./img/location/map@2x.webp 2x" type="image/webp">
                 <source srcset="./img/location/map.png 1x, ./img/location/map@2x.png 2x" type="image/png">
                 <img src="./img/location/map.png" alt="map">
             </picture>
+
+            <ul class="city">
+                <li class="city__item">
+                    New York
+                </li>
+                <li class="city__item">
+                    London
+                </li>
+                <li class="city__item">
+                    Jakarta
+                </li>
+                <li class="city__item">
+                    Yokohama
+                </li>
+            </ul>
 
             <div class="map__write">
                 <h2 class="map__title">Your City Not Listed?</h2>

@@ -1,12 +1,37 @@
 .map{
    margin-bottom: 120px;
-
+   
    
    
    .map__picture{
       
       img{
          width: 100%;
+      }
+   }
+   
+   .city{
+      display: none;
+      margin-top: 40px;
+      
+      @media only screen and (max-width: 450px) {
+         display: block;
+      }
+      
+      .city__item{
+         padding: 22px 100px;
+         background-color: rgba(252, 183, 43, 0.15);
+         text-align: center;
+         margin-bottom: 16px;
+         font-size: 24px;
+         line-height: 28px;
+         letter-spacing: -1.07143px;
+         font-family: $font;
+         color: $color-dark;
+
+         &:hover{
+            background-color: rgba(252, 183, 43, 1);
+         }
       }
    }
    
@@ -34,6 +59,14 @@
             width: 457px;
             margin-bottom: 40px;
          }
+         
+         @media only screen and (max-width: 450px) {
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: 1.43px;
+            margin-bottom: 32px;
+            width: 311px;
+         }
       }
       .map__text{
          color: $color-gray;
@@ -43,6 +76,11 @@
             text-align: center;
             margin-bottom: 40px;
             width: 573px;
+         }
+         
+         @media only screen and (max-width: 450px) {
+            width: 311px;
+            
          }
       }
       

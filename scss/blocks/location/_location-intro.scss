@@ -3,14 +3,20 @@
    margin-top: 96px;
    margin-bottom: 120px;
    
+   @media only screen and (max-width: 450px) {
+      margin-bottom: 72px;
+      margin-top: 64px;
+   }
+   
    .location__picture{
       
       img{
          object-fit: cover;
          width: 100%;
-
-         @media only screen and (max-width: 770px) {
-      }
+         
+         @media only screen and (max-width: 450px) {
+            height: 160px;
+         }
       }
    }
    
@@ -23,11 +29,20 @@
       letter-spacing: -2.5px;
       color: #fff;
       font-family: $font;
-
+      
       @media only screen and (max-width: 770px) {
          top: 25px;
          width: 150px;
          left: 25px;
+      }
+      
+      @media only screen and (max-width: 450px) {
+         font-size: 40px;
+         line-height: 40px;
+         letter-spacing: -1.8;
+         align-items: center;
+         left: 100px;
+         top: 65px;
       }
    }
 }

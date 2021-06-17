@@ -1167,10 +1167,23 @@ a {
   margin-bottom: 120px;
 }
 
+@media only screen and (max-width: 450px) {
+  .location {
+    margin-bottom: 72px;
+    margin-top: 64px;
+  }
+}
+
 .location .location__picture img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+  .location .location__picture img {
+    height: 160px;
+  }
 }
 
 .location__title {
@@ -1192,12 +1205,52 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .location__title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.8;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 100px;
+    top: 65px;
+  }
+}
+
 .map {
   margin-bottom: 120px;
 }
 
 .map .map__picture img {
   width: 100%;
+}
+
+.map .city {
+  display: none;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+  .map .city {
+    display: block;
+  }
+}
+
+.map .city .city__item {
+  padding: 22px 100px;
+  background-color: rgba(252, 183, 43, 0.15);
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  font-family: "Space Mono", sans-serif;
+  color: #495567;
+}
+
+.map .city .city__item:hover {
+  background-color: #fcb72b;
 }
 
 .map .map__write {
@@ -1240,6 +1293,16 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .map .map__write .map__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 1.43px;
+    margin-bottom: 32px;
+    width: 311px;
+  }
+}
+
 .map .map__write .map__text {
   color: #939CAA;
   width: 445px;
@@ -1250,6 +1313,12 @@ a {
     text-align: center;
     margin-bottom: 40px;
     width: 573px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .map .map__write .map__text {
+    width: 311px;
   }
 }
 
