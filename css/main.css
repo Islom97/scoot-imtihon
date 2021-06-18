@@ -933,8 +933,7 @@ a {
 
 @media only screen and (max-width: 450px) {
   .about .about__title {
-    text-align: center;
-    width: 401px;
+    left: 95px;
   }
 }
 
@@ -1422,7 +1421,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    left: 110px;
+    left: 95px;
     top: 65px;
   }
 }
