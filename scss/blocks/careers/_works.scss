@@ -9,6 +9,11 @@
       background-color: #F2F5F9;
       margin-bottom: 24px;
       
+      @media only screen and (max-width: 450px) {
+         flex-direction: column;
+         padding: 36px 32px 32px;
+      }
+      
       .works__title{
          font-size: 24px;
          line-height: 28px;
@@ -16,18 +21,30 @@
          color: $color-dark;
          font-family: $font;
          margin-bottom: 8px;
-      }
 
+         @media only screen and (max-width: 450px) {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 8px;
+            text-align: center;
+         }
+      }
+      
       .works__text{
          color: $color-dark;
-      }
 
+         @media only screen and (max-width: 450px) {
+            text-align: center;
+            margin-bottom: 16px;
+         }
+      }
+      
       .works__link{
          color: #fff;
          font-family: $font;
          padding: 14px 67.5px;
          background-color: $color-orande;
-
+         
          &:hover{
             color: $color-orande;
             background-color: transparent;

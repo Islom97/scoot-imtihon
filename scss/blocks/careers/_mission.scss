@@ -3,7 +3,7 @@
    justify-content: space-between;
    align-items: center;
    margin-bottom: 120px;
-   overflow: hidden;
+   overflow-x: hidden;
    
    @media only screen and (max-width: 770px) {
       flex-direction: column-reverse;
@@ -29,6 +29,14 @@
             margin-top: 64px;
             margin-bottom: 40px;
          }
+
+         @media only screen and (max-width: 450px) {
+            width: 311px;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            margin-bottom: 32px;
+         }
       }
       
       .mission__text{
@@ -38,6 +46,10 @@
          
          @media only screen and (max-width: 770px) {
             width: 573px;
+         }
+
+         @media only screen and (max-width: 450px) {
+            width: 311px;
          }
       }
       
@@ -62,6 +74,12 @@
    &__picture{
       position: relative;
       
+      @media only screen and (max-width: 450px) {
+         img{
+            width: 311px;
+         }
+      }
+      
       &::after{
          content: '';
          position: absolute;
@@ -75,6 +93,10 @@
          
          @media only screen and (max-width: 770px) {
             left: -80px;
+         }
+         
+         @media only screen and (max-width: 450px) {
+            left: 0;
          }
       }
    }
