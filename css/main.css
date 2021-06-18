@@ -933,7 +933,8 @@ a {
 
 @media only screen and (max-width: 450px) {
   .about .about__title {
-    left: 120px;
+    text-align: center;
+    width: 401px;
   }
 }
 
