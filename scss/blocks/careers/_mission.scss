@@ -5,7 +5,15 @@
    margin-bottom: 120px;
    overflow: hidden;
    
+   @media only screen and (max-width: 770px) {
+      flex-direction: column-reverse;
+   }
+   
    .mission__write{
+      
+      @media only screen and (max-width: 770px) {
+         text-align: center;
+      }
       
       .mission__title{
          width: 445px;
@@ -15,14 +23,24 @@
          line-height: 48px;
          letter-spacing: -2.14286px;
          margin-bottom: 24px;
+         
+         @media only screen and (max-width: 770px) {
+            margin: 0 auto;
+            margin-top: 64px;
+            margin-bottom: 40px;
+         }
       }
-
+      
       .mission__text{
          width: 445px;
          color: $color-gray;
          margin-bottom: 40px;
+         
+         @media only screen and (max-width: 770px) {
+            width: 573px;
+         }
       }
-
+      
       .mission__link{
          color: #fff;
          padding: 14px 48px;
@@ -31,7 +49,7 @@
          height: 53px;
          width: 180px;
          text-align: center;
-
+         
          &:hover{
             background-color: transparent;
             border: 3px solid $color-orande;
@@ -40,10 +58,10 @@
          }
       }
    }
-
+   
    &__picture{
       position: relative;
-
+      
       &::after{
          content: '';
          position: absolute;
@@ -54,6 +72,10 @@
          background-size: contain;
          left: -140px;
          bottom: 0;
+         
+         @media only screen and (max-width: 770px) {
+            left: -80px;
+         }
       }
    }
    

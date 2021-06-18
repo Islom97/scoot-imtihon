@@ -15,6 +15,11 @@
         justify-content: space-between;
         margin-bottom: 64px;
         
+        @media only screen and (max-width: 770px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        
         .faqs__item{
             
             .faqs__subtitle{
@@ -23,6 +28,11 @@
                 font-size: 40px;
                 line-height: 48px;
                 color: $color-dark;
+                
+                @media only screen and (max-width: 770px) {
+                    margin-bottom: 32px;
+                    text-align: center;
+                }
             }
             
         }
@@ -41,7 +51,7 @@
                     &:hover{
                         background-color: #FFF4DF;
                     }
-
+                    
                     &::after{
                         content: '';
                         position: absolute;
@@ -64,11 +74,11 @@
                     .mb{
                         margin-bottom: 24px;
                     }
-
+                    
                     .wrapper__text{
                         width: 650px;
                         color: $color-dark;
-
+                        
                     }
                 }
             }

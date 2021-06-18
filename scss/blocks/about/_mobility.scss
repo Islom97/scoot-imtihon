@@ -22,10 +22,15 @@
         justify-content: space-between;
         margin-bottom: 120px;
         
+        @media only screen and (max-width: 770px) {
+            flex-direction: column-reverse;
+        }
+        
         &:nth-child(2){
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
             
             .mobility__picture{
+                
                 
                 &::after{
                     content: '';
@@ -36,7 +41,7 @@
                     background-color: #E5ECF4;
                     left: -509px;
                 }
-
+                
                 &::before{
                     content: '';
                     position: absolute;
@@ -57,11 +62,26 @@
             line-height: 48px;
             color: $color-dark;
             margin-bottom: 24px;
+            
+            @media only screen and (max-width: 770px) {
+                width: 457px;
+                letter-spacing: -2.14px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                margin-top: 56px;
+                text-align: center;
+
+            }
         }
         
         .mobility__text{
             width: 445px;
             color: $color-gray;
+            
+            @media only screen and (max-width: 770px) {
+                width: 573px;
+                text-align: center;
+            }
         }
         
         .mobility__picture{
