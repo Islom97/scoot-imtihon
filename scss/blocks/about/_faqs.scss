@@ -8,6 +8,13 @@
         line-height: 48px;
         font-family: $font;
         margin-bottom: 64px;
+        
+        @media only screen and (max-width: 450px) {
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            margin-bottom: 48px;
+        }
     }
     
     .faqs__list{
@@ -32,6 +39,12 @@
                 @media only screen and (max-width: 770px) {
                     margin-bottom: 32px;
                     text-align: center;
+                }
+                
+                @media only screen and (max-width: 450px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.43px;
                 }
             }
             
@@ -70,6 +83,13 @@
                         color: $color-dark;
                         font-family: $font;
                         letter-spacing: -1.07143px;
+                        
+                        @media only screen and (max-width: 450px) {
+                            font-size: 18px;
+                            line-height: 24px;
+                            width: 219px;
+                            letter-spacing: -0.8px;
+                        }
                     }
                     .mb{
                         margin-bottom: 24px;
@@ -78,6 +98,10 @@
                     .wrapper__text{
                         width: 650px;
                         color: $color-dark;
+                        
+                        @media only screen and (max-width: 450px) {
+                            width: 251px;
+                        }
                         
                     }
                 }

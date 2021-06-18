@@ -892,6 +892,18 @@ a {
   margin-top: 96px;
 }
 
+@media only screen and (max-width: 450px) {
+  .about {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .about .about__bg {
+    height: 160px;
+  }
+}
+
 .about .about__bg img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -919,10 +931,22 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .about .about__title {
+    left: 120px;
+  }
+}
+
 .mobility {
   position: relative;
   overflow: hidden;
   margin-top: 120px;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobility {
+    margin-bottom: 72px;
+  }
 }
 
 .mobility::after {
@@ -937,6 +961,13 @@ a {
           transform: rotateX(180deg);
   top: 268px;
   right: -30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobility::after {
+    right: -350px;
+    top: 150px;
+  }
 }
 
 .mobility .mobility__content {
@@ -968,6 +999,12 @@ a {
           flex-direction: column-reverse;
 }
 
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content:nth-child(2) .mobility__picture img {
+    width: 311px;
+  }
+}
+
 .mobility .mobility__content:nth-child(2) .mobility__picture::after {
   content: '';
   position: absolute;
@@ -976,6 +1013,12 @@ a {
   border-radius: 50%;
   background-color: #E5ECF4;
   left: -509px;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content:nth-child(2) .mobility__picture::after {
+    display: none;
+  }
 }
 
 .mobility .mobility__content:nth-child(2) .mobility__picture::before {
@@ -987,6 +1030,12 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   left: -230px;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content:nth-child(2) .mobility__picture::before {
+    left: -150px;
+  }
 }
 
 .mobility .mobility__content .mobility__title {
@@ -1009,6 +1058,16 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content .mobility__title {
+    width: 311px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    margin-bottom: 32px;
+  }
+}
+
 .mobility .mobility__content .mobility__text {
   width: 445px;
   color: #939CAA;
@@ -1021,8 +1080,21 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content .mobility__text {
+    width: 311px;
+    margin: 0 auto;
+  }
+}
+
 .mobility .mobility__content .mobility__picture {
   position: relative;
+}
+
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content .mobility__picture img {
+    width: 311px;
+  }
 }
 
 .mobility .mobility__content .mobility__picture::after {
@@ -1035,9 +1107,10 @@ a {
   right: -509px;
 }
 
-.mobility .mobility__content .mobility__picture .img {
-  width: 445px;
-  height: 445px;
+@media only screen and (max-width: 450px) {
+  .mobility .mobility__content .mobility__picture::after {
+    display: none;
+  }
 }
 
 .values {
@@ -1184,6 +1257,15 @@ a {
   margin-bottom: 64px;
 }
 
+@media only screen and (max-width: 450px) {
+  .faqs .faqs__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    margin-bottom: 48px;
+  }
+}
+
 .faqs .faqs__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1221,6 +1303,14 @@ a {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .faqs .faqs__list .faqs__item .faqs__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.43px;
+  }
+}
+
 .faqs .faqs__list .wrapper .wrapper__list .wrapper__item {
   position: relative;
   cursor: pointer;
@@ -1255,6 +1345,15 @@ a {
   letter-spacing: -1.07143px;
 }
 
+@media only screen and (max-width: 450px) {
+  .faqs .faqs__list .wrapper .wrapper__list .wrapper__item .wrapper__title {
+    font-size: 18px;
+    line-height: 24px;
+    width: 219px;
+    letter-spacing: -0.8px;
+  }
+}
+
 .faqs .faqs__list .wrapper .wrapper__list .wrapper__item .mb {
   margin-bottom: 24px;
 }
@@ -1262,6 +1361,12 @@ a {
 .faqs .faqs__list .wrapper .wrapper__list .wrapper__item .wrapper__text {
   width: 650px;
   color: #495567;
+}
+
+@media only screen and (max-width: 450px) {
+  .faqs .faqs__list .wrapper .wrapper__list .wrapper__item .wrapper__text {
+    width: 251px;
+  }
 }
 
 .location {
