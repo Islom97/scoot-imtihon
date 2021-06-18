@@ -965,7 +965,7 @@ a {
 
 @media only screen and (max-width: 450px) {
   .mobility::after {
-    right: -350px;
+    right: -400px;
     top: 150px;
   }
 }
