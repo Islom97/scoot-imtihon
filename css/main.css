@@ -26,20 +26,20 @@ a {
 }
 
 .container {
-  width: 1130px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 @media only screen and (max-width: 770px) {
   .container {
-    width: 720px;
+    max-width: 720px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .container {
-    width: 350px;
+    max-width: 350px;
   }
 }
 
@@ -993,10 +993,10 @@ a {
 }
 
 .mobility .mobility__content:nth-child(2) {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 450px) {
